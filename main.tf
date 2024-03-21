@@ -6,7 +6,7 @@ region = "ap-southeast-1"
 resource "aws_instance" "one" {
   ami             = "ami-06018068a18569ff2"
   instance_type   = "t2.micro"
-  key_name        = "kinga1"
+  key_name        = "king1a"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   user_data       = <<EOF
@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami             = "ami-06018068a18569ff2"
   instance_type   = "t2.micro"
-  key_name        = "kinga2"
+  key_name        = "king1a"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   user_data       = <<EOF
@@ -44,7 +44,7 @@ EOF
 resource "aws_instance" "three" {
   ami             = "ami-06018068a18569ff2"
   instance_type   = "t2.micro"
-  key_name        = "kinga3"
+  key_name        = "king1a"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   tags = {
@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami             = "ami-06018068a18569ff2"
   instance_type   = "t2.micro"
-  key_name        = "kinga4"
+  key_name        = "king1a"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   tags = {
@@ -104,7 +104,7 @@ default = ["user1", "user2", "user3", "user4"]
 
 resource "aws_ebs_volume" "eight" {
  availability_zone = "ap-southeast-1a"
-  size = 40
+  size = 2
   tags = {
     Name = "ebs-001"
   }
