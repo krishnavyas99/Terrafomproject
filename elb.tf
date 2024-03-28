@@ -44,6 +44,6 @@ resource "aws_elb" "bar" {
   instance_type = "t2.micro"
   tags = {
     Name = "instance-${each.key}"
-  }
-}/*
+  }*/
+}
 
