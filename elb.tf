@@ -35,7 +35,7 @@ resource "aws_elb" "bar" {
   master_password         = "Rahamshaik#444555"
   backup_retention_period = 5
   preferred_backup_window = "07:00-09:00"
-  final_snapshot_indentifier = true
+  final_snapshot_identifier = true
 }
 
 resource "aws_instance" "kkvl" {
