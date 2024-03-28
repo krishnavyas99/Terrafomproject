@@ -45,5 +45,5 @@ resource "aws_elb" "bar" {
   tags = {
     Name = "instance-${each.key}"
   }*/
-}
+}*/
 
