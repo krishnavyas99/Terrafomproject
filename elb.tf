@@ -25,7 +25,7 @@ resource "aws_elb" "bar" {
   }
 }
 
- resource "aws_rds_cluster" "default" {
+ /*resource "aws_rds_cluster" "default" {
   cluster_identifier      = "aurora-cluster-demo"
   engine                  = "aurora-mysql"
   engine_version          = "5.7.mysql_aurora.2.11.2"
@@ -36,14 +36,14 @@ resource "aws_elb" "bar" {
   backup_retention_period = 5
   preferred_backup_window = "07:00-09:00"
   skip_final_snapshot = true
-}
+}*/
 
-resource "aws_instance" "kkvl" {
+/*resource "aws_instance" "kkvl" {
   for_each = toset(["k", "r", "i"])
   ami           = "ami-06018068a18569ff2"
   instance_type = "t2.micro"
   tags = {
     Name = "instance-${each.key}"
   }
-}
+}/*
 
